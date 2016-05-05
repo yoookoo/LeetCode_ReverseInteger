@@ -5,7 +5,7 @@ public:
         while (x)
         {
             int temp = ans * 10 + x % 10;
-            if (temp / 10 != ans)
+            if (temp / 10 != ans)         //avoid overflow
                 return 0;
             ans = temp;
             x /= 10;
